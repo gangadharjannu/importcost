@@ -1,7 +1,7 @@
 {
     "name": "Import Cost",
     "version": "0.1",
-    "description": "An extension to tell you import cost of JS",
+    "description": "An extension to display import cost of javascript file",
     "manifest_version": 2,
     "permissions": [
         "*://*/*.js"
