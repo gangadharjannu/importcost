@@ -1,0 +1,26 @@
+{
+    "name": "Import Cost",
+    "version": "0.1",
+    "description": "An extension to tell you import cost of JS",
+    "manifest_version": 2,
+    "permissions": [
+        "*://*/*.js"
+    ],
+    "browser_action": {
+        "default_icon": "import-cost.png"
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://*/*.js"
+        ],
+        "css": ["content-styles.css"],
+        "js": [
+            "content.js"
+        ],
+        "run_at": "document_idle"
+    }],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}

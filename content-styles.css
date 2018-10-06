@@ -1,0 +1,24 @@
+.ic-content-size {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    z-index: 99;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    width: 70px;
+    box-sizing: border-box;
+}
+
+.ic-B {
+    background-color: #5cb85c !important;
+}
+
+.ic-kB {
+    background-color: #0275d8 !important;
+}
+
+.ic-MB {
+    background-color: #f0ad4e !important;
+}
