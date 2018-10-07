@@ -1,14 +1,26 @@
 .ic-content-size {
     box-sizing: border-box;
     border: 1px solid white;
-    border-radius: 4px;
+    border-radius: 2px;
     color: #fff;
-    width: 80px;
-    z-index: 99;
+    z-index: 1;
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: 0;
-    padding: 5px;
+    padding: 10px;
+    min-width: 100px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.7;
+    cursor: move;
+
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+
+}
+
+.ic-content-size:hover {
+    opacity: 1;
 }
 
 .ic-B {
@@ -20,5 +32,13 @@
 }
 
 .ic-MB {
-    background-color: #f0ad4e !important;
+    background-color: #dc3545 !important
+}
+
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -webkit-user-drag: element;
 }
